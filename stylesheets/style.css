@@ -80,3 +80,24 @@ quiet { font-size: .75em; color: #777;}
 #undo {
   display: none;
 }
+
+.question {
+	height: 3em;
+}
+
+.item {
+	font-size: 2em;
+	float: left;
+}
+
+.conjunction {
+	float:left;
+	margin-left: 1em;
+	margin-right: 1em;
+	position: relative;
+	top: 25%;
+}
+
+.answer {
+	clear: both;
+}

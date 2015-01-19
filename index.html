@@ -14,9 +14,12 @@
 		<div id="container">
 			<h1>Prioritizer</h1>
 			<div id="ranker">
-				<h1 class="item" id="item_a">Star Wars</h1>
-        <h2><i>or</i></h2>
-				<h1 class="item" id="item_b">Star Trek</h1>
+				<div class="question">
+					<div class="item" id="item_a">Star Wars</div>
+        	<div class="conjunction">or</div>
+					<div class="item" id="item_b">Star Trek</div>
+				</div>
+				<div class="answer">
 				<input id="a_action" type="button" class="btn answer" value="A" />
 				<input id="b_action" type="button" class="btn answer" value="B" />
 				&nbsp;
@@ -24,6 +27,7 @@
 				<p>
 					<quiet>Press 'a', 'b', or 'u' as a short cut.</quiet>
 				</p>
+				</div>
 			</div>
 			<div class="list push" id="unranked">
 				<h3>Enter a list of stuff to prioritize below.</h3>
