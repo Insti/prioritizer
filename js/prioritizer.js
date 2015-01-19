@@ -83,6 +83,19 @@ Ranker.prototype.bindListeners = function() {
         that.init();
         that.show();
     });
+
+	// Restart button.
+    that.$restartAction.bind('click', function(e) {
+		that.$unrankedArea.val( that.$rankedArea.val() );
+		that.$rankedArea.val('');
+    	that.$rankedTitle.html('Ranked');
+    	that.$unrankedDiv.show();
+    	that.$rankAction.show();
+    	that.$rankedDiv.hide();
+		that.$restartAction.hide();
+    });
+
+
 };
 
 Ranker.prototype.show = function() {
@@ -99,6 +112,7 @@ Ranker.prototype.hide = function() {
     this.$ranker.hide();
     this.$unrankedDiv.hide();
     this.$rankedTitle.html('Ranking done!');
+	this.$restartAction.show();
 };
 
 Ranker.prototype.updateAreas = function() {
@@ -218,6 +232,7 @@ $(document).ready(function() {
         '$undo': '#undo',
         '$ranker': '#ranker',
         '$rankAction': '#rank_action',
+        '$restartAction': '#restart_action',
         '$unrankedTitle': '#unranked h3',
         '$rankedDiv': '#ranked',
         '$unrankedDiv': '#unranked',
