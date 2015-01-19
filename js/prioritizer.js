@@ -86,13 +86,13 @@ Ranker.prototype.bindListeners = function() {
 
 	// Restart button.
     that.$restartAction.bind('click', function(e) {
-		that.$unrankedArea.val( that.$rankedArea.val() );
-		that.$rankedArea.val('');
-    	that.$rankedTitle.html('Ranked');
-    	that.$unrankedDiv.show();
-    	that.$rankAction.show();
-    	that.$rankedDiv.hide();
-		that.$restartAction.hide();
+			that.$unrankedArea.val( that.$rankedArea.val() );
+			that.$rankedArea.val('');
+			that.$rankedTitle.html('Ranked');
+			that.$unrankedDiv.show();
+			that.$rankAction.show();
+			that.$rankedDiv.hide();
+			that.$restartAction.hide();
     });
 
 
